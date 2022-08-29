@@ -21,7 +21,10 @@ actor DBank {
     else {
       Debug.print("Amount not available")
     }
-  }
+  };
 
+  public query func checkBalance(): async Nat{
+    return currentValue;
+  };
   // topUp();
 }  
